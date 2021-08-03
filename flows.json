@@ -1,0 +1,21 @@
+[
+    {
+        "id": "35d90834be9ccb1a",
+        "type": "function",
+        "z": "e0d7dab1e2629aac",
+        "name": "",
+        "func": "var max = 45;//valor maximo de temperatura\nvar min = 10;//valor maximo de temperatura\n\nvar date = Math.round(Math.random()*(max-min)+min);\n//genera numero aleatorio entre maximo y minimo y redondea al más cercano\nmsg.payload = \"{\\\"ID\\\":\\\"Fco.Santana\\\", \\\"Temp\\\":\\\"\"+date.toString()+\"\\\", \\\"mnsg\\\":\\\"prueba temp\\\"}\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 400,
+        "wires": [
+            [
+                "834ab24b422bbcae"
+            ]
+        ]
+    }
+]
